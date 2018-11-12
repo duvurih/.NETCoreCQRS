@@ -20,7 +20,7 @@ namespace Dot.Net.Core.Services.Infrastructure
 
             // TODO: Add User Details
 
-            _logger.LogInformation("Northwind Request: {Name} {@Request}", name, request);
+            _logger.LogInformation("Application Request: {Name} {@Request}", name, request);
 
             return Task.CompletedTask;
         }
