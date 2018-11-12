@@ -94,7 +94,6 @@ namespace DotNetCoreAPIServiceNew
             services.AddTransient<SubtractOperatorService>();
             services.AddTransient<MultiplyOperatorService>();
             services.AddTransient<DivideOperatorService>();
-            services.AddTransient<IForexService, ForexService>();
             services.AddTransient<IForexIntegrationService, ForexIntegrationService>();
 
             services.AddTransient<Func<GlobalEnums.OperatorsEnum, ICalculateOperator>>(serviceProvider => key =>
