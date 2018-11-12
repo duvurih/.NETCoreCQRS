@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>inprocess</AspNetCoreHostingModel>
+    <UserSecretsId>440aa15c-bd92-4c98-86fe-f237f0fc5b86</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="FluentValidation" Version="8.0.100" />
+    <PackageReference Include="MediatR" Version="5.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0-preview3-35497" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.0.1916590" />
+    <PackageReference Include="NSwag.AspNetCore" Version="11.20.1" />
+    <PackageReference Include="Seq.Extensions.Logging" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dot.Net.Core.Common\Dot.Net.Core.Common.csproj" />
+    <ProjectReference Include="..\Dot.Net.Core.Services\Dot.Net.Core.Services.csproj" />
+    <ProjectReference Include="..\Dot.Net.Infrastructure.Data\Dot.Net.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Dot.Net.Infrastructure.Integrations\Dot.Net.Infrastructure.Integrations.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>
